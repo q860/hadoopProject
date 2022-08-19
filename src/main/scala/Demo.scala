@@ -5,11 +5,10 @@ object Demo {
     def main(args: Array[String]): Unit = {
         //创建程序入口
         val conf: SparkConf = new SparkConf().setAppName("demo").setMaster("local[*]")
-        print("111111111111111111111111")
+        print("222222")
         val sc = new SparkContext(conf)
         //设置日志级别
         sc.setLogLevel("WARN")
-print("22222222222222")
         //加载数据
         val file: RDD[String] = sc.textFile("E:\\offcn\\Spark阶段\\Spark\\SparkDay06\\资料\\data\\access.log")
         //切分
