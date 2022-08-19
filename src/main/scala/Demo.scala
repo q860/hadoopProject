@@ -8,7 +8,7 @@ object Demo {
         val sc = new SparkContext(conf)
         //设置日志级别
         sc.setLogLevel("WARN")
-
+print("22222222222222")
         //加载数据
         val file: RDD[String] = sc.textFile("E:\\offcn\\Spark阶段\\Spark\\SparkDay06\\资料\\data\\access.log")
         //切分
