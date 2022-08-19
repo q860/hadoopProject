@@ -5,6 +5,7 @@ object Demo {
     def main(args: Array[String]): Unit = {
         //创建程序入口
         val conf: SparkConf = new SparkConf().setAppName("demo").setMaster("local[*]")
+        print("111111111111111111111111")
         val sc = new SparkContext(conf)
         //设置日志级别
         sc.setLogLevel("WARN")
